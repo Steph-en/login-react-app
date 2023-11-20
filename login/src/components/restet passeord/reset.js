@@ -15,7 +15,7 @@ import Divider from '@mui/material/Divider';
 // import { Container } from '@mui/material';
 // import { Container } from '@mui/material/styles';
 
-export default function SignInSide() {
+export default function resetPassword() {
   return (
     <div>
       <Paper elevation={20} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>

@@ -1,21 +1,19 @@
 import * as React from 'react';
-// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-// import { Container } from '@mui/material';
-// import { Container } from '@mui/material/styles';
+import { Link } from 'react-router-dom'
+import Reset from './ResetPage'
 
-export default function resetPassword() {
+export default function SignInSide() {
   return (
     <div>
       <Paper elevation={20} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
@@ -113,7 +111,7 @@ export default function resetPassword() {
                     />
                   </Grid>
                   <Grid sx={{ p: "10px 0 0 0" }}>
-                    <Link href="#" variant="body2" sx={{ textDecoration: "none", color: "#0A9CD5" }} >
+                    <Link to= "./ResetPage.js" variant="body2" sx={{ textDecoration: "none", color: "#0A9CD5" }} >
                       Forgot password?
                     </Link>
                   </Grid>

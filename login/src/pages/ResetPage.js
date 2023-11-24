@@ -1,21 +1,13 @@
 import * as React from 'react';
-// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-// import { Container } from '@mui/material';
-// import { Container } from '@mui/material/styles';
 
-export default function SignInSide() {
+export default function ResetPage() {
   return (
     <div>
       <Paper elevation={20} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
@@ -44,14 +36,11 @@ export default function SignInSide() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'self-start',
-                m: "2.5em 0 0 4em"
+                m: "10em 3em 0 3em"
               }}
             >
-              {/* <Avatar sx={{ m: 1, bgcolor: 'secondary' }}>
-                <LockOutlinedIcon />
-              </Avatar> */}
               <Typography variant="h1" sx={{ m: ".5em 0 0 0", p: ".5em 0 15px 0" }}>
-                Welcome to Preskool
+                Reset Password
               </Typography>
               <Grid
                 sx={{
@@ -62,23 +51,9 @@ export default function SignInSide() {
               >
                 <Grid>
                   <Typography sx={{ color: "gray" }}>
-                    Need an account?
+                    Let Us Help You
                   </Typography>
                 </Grid>
-                <Grid sx={{ p: "1px 0 0 10px" }}>
-                  <Link
-                    href="#"
-                    variant="body2"
-                    sx={{ textDecoration: "none", color: "#0A9CD5" }}
-                  >
-                    Sign Up
-                  </Link>
-                </Grid>
-              </Grid>
-              <Grid>
-                <Typography variant='h2' sx={{ p: "1em 0 .2em 0" }}>
-                  Sign in
-                </Typography>
               </Grid>
               <Box component="form" noValidate sx={{ mt: 1 }}>
                 <TextField
@@ -86,38 +61,20 @@ export default function SignInSide() {
                   required
                   fullWidth
                   id="email"
-                  label="Email Address"
+                  label="Enter your registered email address"
                   name="email"
                   autoComplete="email"
-                  autoFocus
+                  // autoFocus
                 />
-                <TextField
-                  margin="normal"
-                  required
+                <Button
+                  type="submit"
                   fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="current-password"
-                />
-                <Grid sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between"
-                }}>
-                  <Grid sx={{ color: "gray" }} >
-                    <FormControlLabel
-                      control={<Checkbox value="remember" color="secondary" />}
-                      label="Remember me"
-                    />
-                  </Grid>
-                  <Grid sx={{ p: "10px 0 0 0" }}>
-                    <Link href="#" variant="body2" sx={{ textDecoration: "none", color: "#0A9CD5" }} >
-                      Forgot password?
-                    </Link>
-                  </Grid>
-                </Grid>
+                  variant="contained"
+                  color='primary'
+                  sx={{ mt: 3, mb: 2, }}
+                >
+                  Reset My Passwword
+                </Button>
                 <Button
                   type="submit"
                   fullWidth
@@ -125,13 +82,9 @@ export default function SignInSide() {
                   color='secondary'
                   sx={{ mt: 3, mb: 2, }}
                 >
-                  Sign In
+                  Login
                 </Button>
-                <Grid>
-                  <Divider>
-                    OR
-                  </Divider>
-                </Grid>
+                
                 <Grid></Grid>
               </Box>
             </Box>

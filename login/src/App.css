@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  overflow: hidden;
-  border-radius: 1em;
+  /* overflow: hidden; */
 }
 

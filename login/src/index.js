@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Reset from './pages/ResetPage'
-import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "./pages/ResetPage.js",
+    path: "/ResetPage",
     element: <Reset />,
   },
 ]);
@@ -27,4 +27,4 @@ root.render(
   </React.StrictMode>
 );
 
-reportWebVitals();
+// reportWebVitals();

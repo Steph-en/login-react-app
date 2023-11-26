@@ -64,7 +64,7 @@ export default function ResetPage() {
                   label="Enter your registered email address"
                   name="email"
                   autoComplete="email"
-                  // autoFocus
+                // autoFocus
                 />
                 <Button
                   type="submit"
@@ -84,8 +84,6 @@ export default function ResetPage() {
                 >
                   Login
                 </Button>
-                
-                <Grid></Grid>
               </Box>
             </Box>
           </Grid>

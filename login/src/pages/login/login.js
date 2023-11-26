@@ -4,20 +4,22 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import Link from 'react-router-dom';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-import { Link } from 'react-router-dom';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Reset from './ResetPage'
+// import Reset from './components/restet-password/reset' 
+// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+// import { Container } from '@mui/material';
+// import { Container } from '@mui/material/styles';
 
-export default function SignIn({doSmth}) {
+export default function SignInSide() {
   return (
     <div>
       <Paper elevation={20} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
-        <Grid container component="main" sx={{ height: '80vh', width: "80em",  backgroundImage: "",  borderRadius: ".5em .5em .5em .5em" }}>
+        <Grid container component="main" sx={{ height: '80vh', width: "80em", }}>
           <CssBaseline />
           <Grid
             item
@@ -25,7 +27,7 @@ export default function SignIn({doSmth}) {
             sm={4}
             md={7}
             sx={{
-              backgroundImage: '',
+              backgroundImage: 'https://unsplash.com/photos/shallow-focus-photo-of-toddler-walking-near-river-JZ51o_-UOY8',
               backgroundRepeat: 'no-repeat',
               backgroundColor: (t) =>
                 t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -110,8 +112,8 @@ export default function SignIn({doSmth}) {
                       label="Remember me"
                     />
                   </Grid>
-                  <Grid sx={{ p: "10px 0 0 0" }} onclick={()=> {doSmth()}} >
-                    <Link to= "/ResetPage" variant="body2" sx={{ textDecoration: "none", color: "#0A9CD5" }} >
+                  <Grid sx={{ p: "10px 0 0 0" }}>
+                    <Link to="/Reset" variant="body2" sx={{ textDecoration: "none", color: "#0A9CD5" }} >
                       Forgot password?
                     </Link>
                   </Grid>

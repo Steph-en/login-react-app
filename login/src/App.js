@@ -1,6 +1,8 @@
 import './App.css';
 import Login from './pages/LoginPage'
 import { ThemeProvider, createTheme } from '@mui/material';
+import ResetPage from './pages/ResetPage';
+import { useState } from 'react';
 
 const theme = createTheme({
   palette: {
@@ -27,11 +29,26 @@ const theme = createTheme({
   },
 })
 
+
 function App() {
+  const [openReset, setReset] = useState(true)
+  function toggleReset() {
+    setReset(!openReset)
+  }
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <Login />
+        {
+          openReset ? (
+
+              <Login doSmth={toggleReset} />
+            
+          ) : (
+            
+              <ResetPage />
+            
+          )
+        }
       </ThemeProvider>
     </div>
   );

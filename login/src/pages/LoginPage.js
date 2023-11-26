@@ -17,7 +17,7 @@ export default function SignIn({doSmth}) {
   return (
     <div>
       <Paper elevation={20} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
-        <Grid container component="main" sx={{ height: '80vh', width: "80em",  backgroundImage: "",  borderRadius: ".5em .5em .5em .5em" }}>
+        <Grid container component="main" sx={{ height: '80vh', width: "80em",  backgroundImage: 'url("/src/assets/images/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg")',  borderRadius: ".5em .5em .5em .5em" }}>
           <CssBaseline />
           <Grid
             item

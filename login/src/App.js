@@ -1,8 +1,8 @@
-import './App.css';
-import Login from './pages/LoginPage'
-import { ThemeProvider, createTheme } from '@mui/material';
-import ResetPage from './pages/ResetPage';
-import { useState } from 'react';
+import "./App.css";
+import Login from "./pages/LoginPage";
+import { ThemeProvider, createTheme } from "@mui/material";
+import ResetPage from "./pages/ResetPage";
+import { useState } from "react";
 
 const theme = createTheme({
   palette: {
@@ -27,28 +27,21 @@ const theme = createTheme({
       fontWeight: "600",
     },
   },
-})
-
+});
 
 function App() {
-  const [openReset, setReset] = useState(true)
+  const [openReset, setReset] = useState(true);
   function toggleReset() {
-    setReset(!openReset)
+    setReset(!openReset);
   }
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        {
-          openReset ? (
-
-              <Login doSmth={toggleReset} />
-            
-          ) : (
-            
-              <ResetPage />
-            
-          )
-        }
+        {openReset ? (
+          <Login doSmth={toggleReset} />
+        ) : (
+          <ResetPage doSmth={toggleReset} />
+        )}
       </ThemeProvider>
     </div>
   );

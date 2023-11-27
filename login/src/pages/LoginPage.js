@@ -10,14 +10,15 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { Link } from 'react-router-dom';
+import image from '../assets/img/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg'
 // import { makeStyles } from '@material-ui/core/styles';
 // import Reset from './ResetPage'
 
-export default function SignIn({doSmth}) {
+export default function SignIn({ doSmth }) {
   return (
     <div>
       <Paper elevation={20} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
-        <Grid container component="main" sx={{ height: '80vh', width: "80em",  backgroundImage: 'url("/src/assets/images/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg")',  borderRadius: ".5em .5em .5em .5em" }}>
+        <Grid container component="main" sx={{ height: '80vh', width: "80em", borderRadius: ".5em .5em .5em .5em" }}>
           <CssBaseline />
           <Grid
             item
@@ -25,7 +26,7 @@ export default function SignIn({doSmth}) {
             sm={4}
             md={7}
             sx={{
-              backgroundImage: '',
+              backgroundImage: `url(${image})`,
               backgroundRepeat: 'no-repeat',
               backgroundColor: (t) =>
                 t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -45,9 +46,6 @@ export default function SignIn({doSmth}) {
                 m: "2.5em 0 0 4em"
               }}
             >
-              {/* <Avatar sx={{ m: 1, bgcolor: 'secondary' }}>
-                <LockOutlinedIcon />
-              </Avatar> */}
               <Typography variant="h1" sx={{ m: ".5em 0 0 0", p: ".5em 0 15px 0" }}>
                 Welcome to Preskool
               </Typography>
@@ -110,10 +108,10 @@ export default function SignIn({doSmth}) {
                       label="Remember me"
                     />
                   </Grid>
-                  <Grid sx={{ p: "10px 0 0 0" }} onclick={()=> {doSmth()}} >
-                    <Link to= "/ResetPage" variant="body2" sx={{ textDecoration: "none", color: "#0A9CD5" }} >
+                  <Grid sx={{ p: "10px 0 0 0" }} >
+                    <Button variant="body2" sx={{ textDecoration: "none", color: "#0A9CD5" }} onClick={() => { doSmth() }}>
                       Forgot password?
-                    </Link>
+                    </Button>
                   </Grid>
                 </Grid>
                 <Button

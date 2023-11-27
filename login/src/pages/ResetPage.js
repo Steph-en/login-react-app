@@ -6,8 +6,9 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import image from '../assets/img/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg'
 
-export default function ResetPage() {
+export default function ResetPage({ doSmth }) {
   return (
     <div>
       <Paper elevation={20} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
@@ -19,7 +20,7 @@ export default function ResetPage() {
             sm={4}
             md={7}
             sx={{
-              backgroundImage: 'https://unsplash.com/photos/shallow-focus-photo-of-toddler-walking-near-river-JZ51o_-UOY8',
+              backgroundImage: `url(${image})`,
               backgroundRepeat: 'no-repeat',
               backgroundColor: (t) =>
                 t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -81,6 +82,7 @@ export default function ResetPage() {
                   variant="contained"
                   color='secondary'
                   sx={{ mt: 3, mb: 2, }}
+                  onClick={() => { doSmth() }}
                 >
                   Login
                 </Button>

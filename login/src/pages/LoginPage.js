@@ -17,7 +17,7 @@ import image from '../assets/img/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg'
 export default function SignIn({ doSmth }) {
   return (
     <div>
-      <Paper elevation={20} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
+      <Paper elevation={1} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
         <Grid container component="main" sx={{ height: '80vh', width: "80em", borderRadius: ".5em .5em .5em .5em" }}>
           <CssBaseline />
           <Grid
@@ -32,10 +32,10 @@ export default function SignIn({ doSmth }) {
                 t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              borderRadius: ".5em 0 0 .5em"
+              borderRadius: ".5em 2em 2em .5em"
             }}
           />
-          <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square sx={{ borderRadius: "0 .5em .5em 0", }}>
+          <Grid item xs={12} sm={8} md={5} elevation={4} square sx={{ borderRadius: "0 .5em .5em 0", }}>
             <Box
               sx={{
                 my: 8,
@@ -56,7 +56,7 @@ export default function SignIn({ doSmth }) {
                   alignContent: "end"
                 }}
               >
-                <Grid>
+                {/* <Grid>
                   <Typography sx={{ color: "gray" }}>
                     Need an account?
                   </Typography>
@@ -69,10 +69,10 @@ export default function SignIn({ doSmth }) {
                   >
                     Sign Up
                   </Link>
-                </Grid>
+                </Grid> */}
               </Grid>
               <Grid>
-                <Typography variant='h2' sx={{ p: "1em 0 .2em 0" }}>
+                <Typography variant='h2' sx={{ p: "1em 0 .2em 0", color: "GrayText" }}>
                   Sign in
                 </Typography>
               </Grid>

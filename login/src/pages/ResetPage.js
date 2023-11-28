@@ -26,10 +26,10 @@ export default function ResetPage({ doSmth }) {
                 t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              borderRadius: ".5em 0 0 .5em"
+              borderRadius: ".5em 2em 2em .5em"
             }}
           />
-          <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square sx={{ borderRadius: "0 .5em .5em 0", }}>
+          <Grid item xs={12} sm={8} md={5} elevation={4} square sx={{ borderRadius: "0 .5em .5em 0", }}>
             <Box
               sx={{
                 my: 8,
@@ -65,7 +65,7 @@ export default function ResetPage({ doSmth }) {
                   label="Enter your registered email address"
                   name="email"
                   autoComplete="email"
-                // autoFocus
+                  autoFocus
                 />
                 <Button
                   type="submit"

@@ -11,7 +11,7 @@ import image from '../assets/img/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg'
 export default function ResetPage({ doSmth }) {
   return (
     <div>
-      <Paper elevation={20} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
+      <Paper elevation={6} sx={{ my: 13, borderRadius: ".5em .5em .5em .5em", }}>
         <Grid container component="main" sx={{ height: '80vh', width: "80em", }}>
           <CssBaseline />
           <Grid

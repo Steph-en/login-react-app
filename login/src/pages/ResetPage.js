@@ -29,7 +29,7 @@ export default function ResetPage({ doSmth }) {
               borderRadius: ".5em 2em 2em .5em"
             }}
           />
-          <Grid item xs={12} sm={8} md={5} elevation={4} square sx={{ borderRadius: "0 .5em .5em 0", }}>
+          <Grid item xs={12} sm={8} md={5} square sx={{ borderRadius: "0 .5em .5em 0", }}>
             <Box
               sx={{
                 my: 8,

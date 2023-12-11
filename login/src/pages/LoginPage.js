@@ -10,6 +10,10 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';// import { Link } from 'react-router-dom';
 import image from '../assets/img/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg'
+import GoogleIcon from '@mui/icons-material/Google';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function SignIn({ doSmth }) {
   return (
@@ -125,7 +129,40 @@ export default function SignIn({ doSmth }) {
                     OR
                   </Divider>
                 </Grid>
-                <Grid></Grid>
+                <Grid sx={{ display:'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', justifyContent: 'space-evenly' }}>
+                  <Button
+                    type="button"
+                    variant="contained"
+                    color='other'
+                    sx={{ mt: 2, mb: 2 }}
+                  >
+                    <GoogleIcon />
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="contained"
+                    color='other'
+                    sx={{ mt: 2, mb: 2 }}
+                  >
+                    <FacebookIcon />
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="contained"
+                    color='other'
+                    sx={{ mt: 2, mb: 2 }}
+                  >
+                    <TwitterIcon />
+                  </Button>
+                  <Button
+                  type="button"
+                  variant="contained"
+                  color='other'
+                  sx={{ mt: 2, mb: 2 }}
+                >
+                  <LinkedInIcon />
+                </Button>
+                </Grid>
               </Box>
             </Box>
           </Grid>

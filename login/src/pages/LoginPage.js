@@ -73,20 +73,6 @@ export default function SignIn({ doSmth }) {
                   alignContent: "end"
                 }}
               >
-                {/* <Grid>
-                  <Typography sx={{ color: "gray" }}>
-                    Need an account?
-                  </Typography>
-                </Grid>
-                <Grid sx={{ p: "1px 0 0 10px" }}>
-                  <Link
-                    href="#"
-                    variant="body2"
-                    sx={{ textDecoration: "none", color: "#0A9CD5" }}
-                  >
-                    Sign Up
-                  </Link>
-                </Grid> */}
               </Grid>
               <Grid>
                 <Typography variant='h2' sx={{ p: "1em 0 .2em 0", color: "GrayText" }}>
@@ -94,16 +80,6 @@ export default function SignIn({ doSmth }) {
                 </Typography>
               </Grid>
               <Box component="form" noValidate sx={{ mt: 1 }}>
-                {/* <TextField
-                  margin="normal"
-                  required
-                  fullWidth
-                  id="email"
-                  label="Username"
-                  name="email"
-                  autoComplete="email"
-                  autoFocus
-                /> */}
                 <FormControl sx={{ mt: 1, }}
                   margin="normal"
                   required

@@ -46,7 +46,7 @@ export default function SignIn({ doSmth }) {
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            borderRadius: "0 2em 2em 0"
+            // borderRadius: "0 5em 4em 0"
           }}
         />
         <Grid item xs={13} sm={8} md={6} square sx={{ borderRadius: "0", }}>

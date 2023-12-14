@@ -39,10 +39,10 @@ export default function ResetPage({ doSmth }) {
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            borderRadius: "0 2em 2em 0"
+            // borderRadius: "0 2em 2em 0"
           }}
         />
-        <Grid item xs={12} sm={8} md={6} square sx={{ borderRadius: "0 .5em .5em 0", }}>
+        <Grid item xs={12} sm={8} md={6} square sx={{ borderRadius: "0", }}>
           <Box
             sx={{
               my: 8,

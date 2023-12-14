@@ -14,12 +14,12 @@ const theme = createTheme({
       main: "#2e74c9",
     },
     other: {
-      main: "#A9A9A9",
+      main: "#F3F3F3",
     },
   },
   typography: {
     h1: {
-      fontSize: "2.9rem",
+      fontSize: "2.8rem",
       fontWeight: "700",
     },
     h2: {
